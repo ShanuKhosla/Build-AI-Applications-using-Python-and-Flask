@@ -32,7 +32,7 @@ def add_transaction():
             'amount': int(requests.form['amount'])
         }
         transactions.append(new_transaction)
-        return redirect(url_for(""))
+        return redirect(url_for("get_transaction"))
 
 
 # Update operation
